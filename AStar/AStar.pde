@@ -4,8 +4,8 @@ William Marks
 July 24, 2020
 */
 
-int cols = 25; //columns of the grid
-int rows = 25; //rows of the grid
+int cols = 100; //columns of the grid
+int rows = 100; //rows of the grid
 
 Cell[][] Grid = new Cell[cols][rows]; //basic container of the grid, the empty husk if you will
 ArrayList<Cell> openSet = new ArrayList<Cell>(); //current open alive nodes //green

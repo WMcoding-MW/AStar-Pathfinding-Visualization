@@ -7,7 +7,7 @@ int y = 0;
 ArrayList<Cell> neighbours;
 Cell previous;
 boolean wall;
-final int WALL_PERCENTAGE = 25;
+final double WALL_PERCENTAGE = 0.25;
 /*
 Contructor
 Requires: an x and y location on the grid
@@ -23,7 +23,7 @@ public Cell(int x, int y){
   this.previous = null; //sets the previous to null as it hasn't been given life by a previousNode
   this.wall = false; 
   
-  if(random(1) < (WALL_PERCENTAGE)/100){ //determines if the current node will be turned into a wall.
+  if(random(1) < WALL_PERCENTAGE){ //determines if the current node will be turned into a wall.
   this.wall = true;
   }  
 }
